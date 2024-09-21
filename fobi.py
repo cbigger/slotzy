@@ -50,15 +50,11 @@ def slotCheckBalance(user):
     return f"**Your current balance is {balance} {HubCoin}**"
 
 async def slotCashout(user):
-    if user != owner:
-        owner_user = await client.fetch_user(owner)
-        return f"Only the machine owner can perform cashouts. This machine is owned by {owner_user.name}."
-    
+    user = str(user)  # Ensure user is a string
+    owner_user = await client.fetch_user(owner)
     total_cashed_out = get_balance(user)
     bookie[user] = 0
-    owner_user = await client.fetch_user(owner)
-    return f"**Cashed out a total of {total_cashed_out} {HubCoin}.\n{owner_user.name}'s account has been cleared.**"
-
+    return f"**{owner_user.mention}, {total_cashed_out} {HubCoin} has been cashed out for <@{user}>.\n<@{user}>'s account has been cleared.**"
 
 def slotMachineCommand(num_spins,wager,message):
     outcomes = [':tumbler_glass:', HubCoin, ':skull_crossbones:', ':cherries:']
