@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-GUILDS = (1096676850027204758,1006584732936589414)
 
 from discord import Intents
 intents = Intents.default()
