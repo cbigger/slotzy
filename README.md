@@ -1,4 +1,6 @@
-Discord bot for running casino games.
+## SLOTZY
+
+Discord bot library for running chat-command based casino games.
 Made for and by the Galactic Hub Project: https://discord.gg/tkPYCHaR
 
 Currently has: 
