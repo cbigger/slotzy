@@ -1,6 +1,6 @@
 ## SLOTZY
 
-Discord bot library for running chat-command based casino games.
+Buncha Discord bots for running in-chat casino games.
 Made for and by the Galactic Hub Project: https://discord.gg/tkPYCHaR
 
 Currently has: 
