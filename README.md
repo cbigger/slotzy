@@ -1,7 +1,7 @@
 ## SLOTZY
 
 Buncha Discord bots for running in-chat casino games.
-Made for and by the Galactic Hub Project: https://discord.gg/tkPYCHaR
+Made for and by the Galactic Hub Project, but feel free to run your own: https://discord.gg/tkPYCHaR
 
 Currently has: 
 - **FOBI, or Fixed Odds Betting Interface**
